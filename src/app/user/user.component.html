@@ -1,0 +1,17 @@
+<div *ngFor="let user of users">
+  <p>ID: {{ user.Id }}</p>
+ <p>Firstname: {{ user.FirstName }}</p>
+  <p>Lastname: {{ user.LastName }}</p> 
+  <p>Date of Birth: {{ user.DateOfBirth }}</p>
+  <p>Phone Number: {{ user.PhoneNumber }}</p>
+  <p>Email: {{ user.Email }}</p>
+  <hr />
+</div>
+
+
+<button (click)="sendDataToParent()">Send Data to Parent</button>
+<div *ngFor="let user of ChildUsers">
+
+</div>
+
+
